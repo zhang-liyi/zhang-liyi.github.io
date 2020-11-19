@@ -107,7 +107,7 @@ width:80px;
         For a framework of analysis, I usually follow the Box's Loop described in detail in <a href="http://www.cs.columbia.edu/~blei/papers/Blei2014b.pdf">Blei (2014)</a>. The graph below outlines the Box's Loop (comes from the same article).
         </p>
         <p>
-        <img src="Images/Bayesian-workflow.png" width="75%">
+        <img src="Images/Bayesian-workflow.png" width="85%">
         </p>
         <p> &nbsp </p>
         </td> 
@@ -115,19 +115,18 @@ width:80px;
       </table>
  
 
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td width="100%" valign="middle">
           <heading>Publication</heading>
         </td>
       </tr>
-      </table>
+    </table>
 
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="25">
-
     <tr>
       <td width="25%">
-        <img src='Images/vcsmc-loglik.png' width="280" height="250">
+        <img src='Images/vcsmc-loglik.png' width="320" height="250">
       </td>
       <td valign="top" width="75%">
         <p>
@@ -144,9 +143,54 @@ width:80px;
         <p>Bayesian phylogenetic inference is often conducted via local or sequential search algorithms such as random-walk Markov chain Monte Carlo or Combinatorial Sequential Monte Carlo. These methods sample tree topologies and branch lengths, however when MCMC is used to perform evolutionary parameter learning, convergence often requires long runs with inefficient state space exploration. We introduce Variational Combinatorial Sequential Monte Carlo (VCSMC), a novel Variational Inference method that simultaneously performs both parameter inference and model learning. Our method uses sequential search to construct a variational objective defined on the composite space of phylogenetic trees. We show that VCSMC is computationally efficient and explores higher probability spaces when compared with state-of-the-art Hamiltonian Monte Carlo methods. </p>
       </td>
     </tr>
-
     </table>
 
-        
+
+
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="100%" valign="middle">
+          <heading>Projects</heading>
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="25">
+    <tr>
+      <td width="25%">
+        <img src='Images/ternary_weights_random_topo3.png' width="280" height="250">
+      </td>
+      <td valign="top" width="75%">
+        <p>
+        <a href="Writings/stack-phylo.pdf">
+            <papertitle>Model Stacking in Bayesian Phylogenetic Inference</papertitle>
+        </a>
+        <em>Columbia Statistics - Undergraduate Internship. Work in Progress. </em>  <br>
+        </p>
+        <p>I'm working with Professor Andrew Gelman to develop MCMC method in R and Stan to enable sampling in discrete spaces in phylogenetic models by isolating discrete models and using stacking of predictive distributions for model combination. Here, I'm still in the process of diagnosing MCMC inference and exploring properties of stacking as a method of model averaging.</p>
+      </td>
+    </tr>
+    </table>
+
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="25">
+    <tr>
+      <td width="25%">
+        <img src='Images/svrg.png' width="280" height="250">
+      </td>
+      <td valign="top" width="75%">
+        <p>
+        <a href="Writings/SVRG_report.pdf">
+            <papertitle>Model Stacking in Bayesian Phylogenetic Inference</papertitle>
+        </a>
+        <em>COMS 4995 Optimization Methods in Machine Learning - Class Group Project </em>  <br>
+        </p>
+        <p>Stochastic Variance Reduced Gradient (SVRG) is one of the popular method proposed to reduce the variance of gradient in the optimization. In this project, we evaluate its result on nonconvex optimization. We study the method without the convex assumption and try to reproduce previous experiment results to verify their claims. However, we can only partially reproduce their result and the advantage against SGD no longer holds when we use deeper network.</p>
+      </td>
+    </tr>
+    </table>
+
+
+    <p> &nbsp </p>
+    <p> &nbsp </p>  
   </body>
 </html>
