@@ -223,6 +223,21 @@ width:80px;
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="25">
     <tr>
       <td width="25%">
+        <img src='Images/hsc.png' width="100%">
+      </td>
+      <td valign="top" width="75%">
+        <p>
+        <papertitle>Hamiltonian Score Climbing: Variational Inference using Inclusive KL and Neural Transport</papertitle><br>
+        <em>Ongoing research project with </em><a href="http://www.cs.columbia.edu/~blei/">David Blei</a><br>
+        </p>
+        <p>Variational inference often minimizes the “exclusive Kullbeck-Leibler (KL)” KL(q||p) from the approximate distribution q to the posterior p. Recent work studies the “inclusive KL” KL(p||q), which unlike exclusive KL does not underestimate uncertainty. This paper introduces Hamiltonian Score Climbing (HSC), a method that optimizes KL(p||q) using Hamiltonian Monte Carlo (HMC) and transport maps. The transport map improves the trajectory of HMC sampling by acting as a change of variable between the latent variable space and a warped space. HSC uses HMC samples to dynamically train a transport map while optimizing KL(p||q). HSC leverages synergies, where better trans- port maps leads to better HMC sampling, which then leads to better transport maps. We demonstrate its utility on synthetic and real data. Among the studies, we find that HSC achieves competitive performance when training variational autoencoders on large-scale data. </p>
+      </td>
+    </tr>
+    </table>
+
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="25">
+    <tr>
+      <td width="25%">
         <img src='Images/stack-ternary.png' width="100%">
       </td>
       <td valign="top" width="75%">
