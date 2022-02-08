@@ -126,7 +126,7 @@ width:80px;
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
         <tr>
           <td width="100%" valign="middle">
-            <heading>Introduction</heading>
+            <heading>Background and Research Interest</heading>
           </td>
         </tr> 
       </table>
@@ -136,7 +136,7 @@ width:80px;
         <tr>
         <td width="100%" valign="middle">
         <p>
-        I will do Data Science Masters at Columbia University in September 2021. I graduated from Columbia University, Columbia College in May 2021 with majors in Statistics and Applied Mathematics. I am advised by professor <a href="http://www.cs.columbia.edu/~blei/">David Blei</a> during Masters, and by professor <a href="http://www.cs.columbia.edu/~itsik/">Itsik Pe'er</a> and professor <a href="http://www.stat.columbia.edu/~gelman/">Andrew Gelman</a> during Undergrad. I aim to bring AI models closer to humans – having human-like behaviors or becoming more interpretable. Although deep learning offers expressivity, we inadequately understand its reasoning process. Meanwhile, probabilistic modeling complements this weakness and has become scalable. I work on combining these two areas in order to create expressive models with reliable uncertainty estimation, robustness, and a level of interpretability.
+        I am doing Data Science Masters at Columbia University, expecting to graduate in May 2022. I majored in Statistics and Applied Mathematics at Columbia College, Columbia University, and graduated in May 2021. I am advised by professor <a href="http://www.cs.columbia.edu/~blei/">David Blei</a> during Masters, and by professor <a href="http://www.cs.columbia.edu/~itsik/">Itsik Pe'er</a> and professor <a href="http://www.stat.columbia.edu/~gelman/">Andrew Gelman</a> during Undergrad. I aim to bring AI models closer to humans – having human-like behaviors or becoming more interpretable. Although deep learning offers expressivity, we inadequately understand its reasoning process. Meanwhile, probabilistic modeling complements this weakness and has become scalable. I work on combining these two areas in order to create expressive models with reliable uncertainty estimation, robustness, and a level of interpretability.
         </p>
         </td> 
         </tr>
@@ -148,7 +148,7 @@ width:80px;
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td width="100%" valign="middle">
-          <heading>Publications</heading>
+          <heading>Publications and Preprints</heading>
         </td>
       </tr> 
     </table>
@@ -191,6 +191,24 @@ width:80px;
     </tr>
     </table>
 
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="25">
+      <tr>
+        <td width="25%">
+          <img src='Images/hsc.png' width="90%">
+        </td>
+        <td valign="top" width="75%">
+          <p>
+          <a href="https://arxiv.org/pdf/2202.01841.pdf">
+            <papertitle>Transport Score Climbing: Variational Inference Using Forward KL and Adaptive Neural Transport</papertitle>
+          </a><br>
+            <strong>Liyi Zhang</strong>,
+            <a href=https://naesseth.github.io/>Christian A. Naesseth</a>,
+            <a href="http://www.cs.columbia.edu/~blei/">David M. Blei</a>
+          </p>
+          <p>Variational inference often minimizes the "reverse" Kullbeck-Leibler (KL) KL(q||p) from the approximate distribution q to the posterior p. Recent work studies the "forward" KL KL(p||q), which unlike reverse KL does not lead to variational approximations that underestimate uncertainty. This paper introduces Transport Score Climbing (TSC), a method that optimizes KL(p||q) by using Hamiltonian Monte Carlo (HMC) and a novel adaptive transport map. The transport map improves the trajectory of HMC by acting as a change of variable between the latent variable space and a warped space. TSC uses HMC samples to dynamically train the transport map while optimizing KL(p||q). TSC leverages synergies, where better transport maps lead to better HMC sampling, which then leads to better transport maps. We demonstrate TSC on synthetic and real data. We find that TSC achieves competitive performance when training variational autoencoders on large-scale data.</p>
+        </td>
+      </tr>
+      </table>
     <br>
     <br>
 
@@ -202,22 +220,7 @@ width:80px;
       </tr>
     </table>
     <br>
-
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="25">
-    <tr>
-      <td width="25%">
-        <img src='Images/hsc.png' width="90%">
-      </td>
-      <td valign="top" width="75%">
-        <p>
-        <papertitle>Hamiltonian Score Climbing: Variational Inference using Inclusive KL and Neural Transport</papertitle><br>
-         <em>Ongoing research project advised by </em><a href="http://www.cs.columbia.edu/~blei/">David Blei</a>. <em>Work under review.</em><br>
-        </p>
-        <p>Variational inference often minimizes the “exclusive Kullbeck-Leibler (KL)” KL(q||p) from the approximate distribution q to the posterior p. Recent work studies the “inclusive KL” KL(p||q), which unlike exclusive KL does not underestimate uncertainty. This paper introduces Hamiltonian Score Climbing (HSC), a method that optimizes KL(p||q) using Hamiltonian Monte Carlo (HMC) and transport maps. The transport map improves the trajectory of HMC sampling by acting as a change of variable between the latent variable space and a warped space. HSC uses HMC samples to dynamically train a transport map while optimizing KL(p||q). HSC leverages synergies, where better transport maps leads to better HMC sampling, which then leads to better transport maps. We demonstrate its utility on synthetic and real data. Among the studies, we find that HSC achieves competitive performance when training variational autoencoders on large-scale data. </p>
-      </td>
-    </tr>
-    </table>
-<br>
+     <br>
 
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="25">
     <tr>
